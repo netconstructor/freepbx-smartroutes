@@ -1,0 +1,29 @@
+<module>
+	<rawname>smartroutes</rawname>
+	<name>SmartRoutes</name>
+	<description>SmartRoutes is a module that allows you to control inbound call routing based on external database values. Using SmartRoutes you can pre-process incoming DIDs, route incoming calls to the appropriate queue (skills based routing), you can automatically route calls from one trunk to another (sip->tdm gateway), you can set variables in the dial plan (like cdr, caller id name, etc), strip unnecessary caller-id and did prefixes from inbound calls, and much more based on the caller id, did called or other Asterisk call values. As an example, you can route customer calls differently based on how much money they do with your business.</description>
+	<version>1.3.3</version>
+	<publisher>Qualityansweringservice.com (VoiceNation Live)</publisher>
+	<license>GPLv2</license>
+	<type>setup</type>
+	<category>Addons</category>
+	<menuitems>
+		<smartroutes category="Inbound Call Control">SmartRoutes</smartroutes>
+	</menuitems>
+	<info>http://www.qualityansweringservice.com/anatomy-oscc/freepbx/smartroutes</info>
+    <changelog>
+       				*1.3.3* Fix for Asterisk 1.8+    
+					*1.3.2* Support Asterisk 1.8 (mysql module and dialplan)
+    				*1.3.1* Fix for 2.9+ bootstrap compatibility
+    				*1.3* Adjust cronmanager script to support pre-2.9 FreePBX and 2.9+ bootstrapping (clean_calltracking )
+    				*1.2* added call tracking for smartroutes call traffic shaping 
+					*1.1* added pulldown to select pre-configured odbc dsn's from Asterisk's res_odbc.conf, allow SmartRoutes to be primary processor for trunk calls, allow override extension/context for destinations other than trunks, allow standard FreePBX inbound routes as a SmartRoutes destination (with override extension), minor bug fixes, new database field value trunkdefault in table smartroute  
+ 					*1.0* initial commit  
+    </changelog>
+	<depends>
+		<version>2.7.0beta1</version>
+		<phpversion>5.1.0</phpversion>
+	</depends>
+	<location>contributed_modules/release/smartroutes-1.3.3.tgz</location>	
+	<md5sum>1ec5f913638487a8be4fe154056914f6</md5sum>
+</module>
