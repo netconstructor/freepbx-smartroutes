@@ -51,9 +51,6 @@ else if($action == 'edited') {
 
 ?>
 
-<!-- Close to display rnav properly -->
- 
-
 <!-- Display right-side list of smartroutes -->
 <div class="rnav"><ul>
 <li><a id="<?php echo(empty($id)?'current':'nul'); ?>" href="config.php?display=smartroutes&amp;action=add">Add Route</a></li>
